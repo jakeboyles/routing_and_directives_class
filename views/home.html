@@ -1,0 +1,17 @@
+<h2>"Ride a bike that you like"</h2>
+
+<div class="featured">
+	<h3>This Weeks Featured Bike</h3>
+		<div">
+				<img class="featuredBike" ng-src="{{main.data.image}}">
+				<p class="featuredBikeList"><a href="#/detail/{{main.data.id}}">{{main.data.name}}</a></p>
+				<p class="featuredBikeList">{{main.data.price | currency}}</p>
+		</div>
+
+		<div ng-repeat="blog in main.blogs">
+			<blog item="{{blog}}"></blog>
+		</div>
+ 
+</div>
+</div>
+
